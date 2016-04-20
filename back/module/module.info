@@ -1,0 +1,63 @@
+
+// -----------------------------------------------------------------------------
+// Simplest
+
+name = Module name
+description = Module detail description.
+core = 7.x
+
+version = 7.x-1.x
+
+
+// -----------------------------------------------------------------------------
+// Normal
+
+name = Module name
+description = Module detail description.
+core = 7.x
+package = Package name
+
+version = 7.x-1.x
+
+
+
+// -----------------------------------------------------------------------------
+
+/*
+name = Node
+description = Allows content to be submitted to the site and displayed on pages.
+package = Core
+version = VERSION
+core = 7.x
+files[] = node.module
+files[] = node.test
+required = TRUE
+configure = admin/structure/types
+
+stylesheets[all][] = node.css
+scripts[] = node.js
+
+dependencies[] = ctools
+
+; Requires menu_build_tree() conditions; available after 7.10.
+; @see http://drupal.org/node/1025582
+dependencies[] = system (>7.10)
+
+; Information added by Drupal.org packaging script on 2014-01-15
+version = "7.26"
+project = "drupal"
+datestamp = "1389815930"
+*/
+
+// -----------------------------------------------------------------------------
+// required
+required = TRUE or required = 1
+This indicates this module will be enabled along with core modules in profile install stage. // @careful
+
+
+// -----------------------------------------------------------------------------
+// Configuration
+
+// @in commerce_kickstart.info
+php_memory_limit = 128M
+

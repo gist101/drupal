@@ -1,0 +1,1 @@
+Component code template. Not theme template.
